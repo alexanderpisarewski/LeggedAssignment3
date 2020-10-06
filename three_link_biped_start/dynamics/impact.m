@@ -8,9 +8,10 @@ q_p(1, 1) = pi/6;% angular positions before/after impact
 q_p(2, 1) = -pi/6; 
 q_p(3, 1) = pi/8;
 
-A_m = eval_A_m(q_m);
-A_p = eval_A_p(q_p);
+A_m=eval_A_m(q_m);
+A_p=eval_A_p(q_p);
 
+dq_p=A_p\(A_m*dq_m);
 % A_p dq_p = A_m dq_m
 % Note: To solve the equation Ax = b you could use x = A \ b to avoid taking
 % inverse of A. 

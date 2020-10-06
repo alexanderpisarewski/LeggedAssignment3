@@ -1,7 +1,7 @@
 function A_m = eval_A_m(q_m)
 [m1, m, m3, l1, l2, l3, g] = set_parameters();
 q1_m=q_m(1);q2_m=q_m(2);q3_m=q_m(3);
-2 = abs(l1);
+t2 = abs(l1);
 t3 = abs(l2);
 t4 = abs(l3);
 t5 = conj(l2);
